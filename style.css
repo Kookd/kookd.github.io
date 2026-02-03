@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 8%;
+  z-index: 1000;
+}
+
+nav a {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+section {
+  padding: 100px 8%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+/* Publications */
+#publications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#publications li {
+  margin-bottom: 1rem;
+}
+
+#publications h3 {
+  margin-top: 1.5rem;
+}
