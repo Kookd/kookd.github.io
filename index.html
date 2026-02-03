@@ -130,24 +130,28 @@
   </table>
 </section>
 <script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("nav a[href^='#']");
+
+  const setActive = (id) => {
+    navLinks.forEach(link => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+    });
+  };
 
   const observer = new IntersectionObserver(
-    entries => {
+    (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${entry.target.id}`) {
-              link.classList.add("active");
-            }
-          });
+          setActive(entry.target.id);
         }
       });
     },
     {
-      threshold: 0.6
+      // Treat a section as "active" when its top enters the top 35% of the viewport
+      root: null,
+      rootMargin: "-20% 0px -65% 0px",
+      threshold: 0
     }
   );
 
