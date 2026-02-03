@@ -48,6 +48,27 @@ nav a {
   object-fit: cover;
 }
 
+.academic-training {
+  list-style: none;
+  padding-left: 0;
+}
+
+.academic-training > li {
+  margin-bottom: 0.75rem;
+}
+
+.academic-training ul {
+  list-style: disc;
+  margin-top: 0.3rem;
+  margin-left: 1.2rem;
+}
+
+.academic-training .dates {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: 6px;
+}
+
 section {
   padding: 100px 8%;
   max-width: 1000px;
