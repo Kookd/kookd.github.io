@@ -121,6 +121,10 @@ section {
   min-height: 80vh;        /* ensures sections are tall enough */
   scroll-margin-top: 90px; /* offset for fixed nav */
 }
+
+section:last-of-type {
+  padding-bottom: 45vh;
+}
 /* Tables */
 table {
   width: 100%;
@@ -161,10 +165,6 @@ tbody tr:hover {
 
 #publications h3 {
   margin-top: 1.5rem;
-}
-
-#projects {
-  padding-bottom: 80vh;
 }
 
 @media (max-width: 768px) {
