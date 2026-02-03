@@ -58,6 +58,17 @@ nav a:hover::after {
   width: 100%;
 }
 
+/* Active section link (current section) */
+nav a.active {
+  color: #1b5e20;
+  background-color: #e6f4ea;
+}
+
+/* Keep underline visible for active link */
+nav a.active::after {
+  width: 100%;
+}
+
 .about-container {
   display: flex;
   align-items: center;
