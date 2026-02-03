@@ -119,6 +119,7 @@ section {
   margin: auto;
 
   min-height: auto;        /* remove forced tall sections */
+  scroll-margin-top: 55px;
 }
 
 section:last-of-type {
