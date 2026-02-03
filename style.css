@@ -114,7 +114,7 @@ nav a.active::after {
 }
 
 section {
-  padding: 70px 8% 55px;   /* top / sides / bottom */
+  padding: 70px 8% 40px;   /* top / sides / bottom */
   max-width: 1000px;
   margin: auto;
 
@@ -124,7 +124,7 @@ section {
 
 section:last-of-type {
   margin-top: 120px;
-  padding-bottom: 25vh;
+  padding-bottom: 35vh;
 }
 /* Tables */
 table {
