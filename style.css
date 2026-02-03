@@ -114,16 +114,16 @@ nav a.active::after {
 }
 
 section {
-  padding: 100px 8%;
+  padding: 70px 8% 55px;   /* top / sides / bottom */
   max-width: 1000px;
   margin: auto;
 
-  min-height: 80vh;        /* ensures sections are tall enough */
-  scroll-margin-top: 90px; /* offset for fixed nav */
+  min-height: auto;        /* remove forced tall sections */
+  scroll-margin-top: 90px; /* keep this for fixed nav */
 }
 
 section:last-of-type {
-  padding-bottom: 45vh;
+  padding-bottom: 35vh;
 }
 /* Tables */
 table {
