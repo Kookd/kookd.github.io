@@ -26,6 +26,28 @@ nav a {
   font-weight: 500;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-photo {
+  flex: 1;
+  text-align: right;
+}
+
+.about-photo img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 8px;        /* subtle rounding */
+  object-fit: cover;
+}
+
 section {
   padding: 100px 8%;
   max-width: 1000px;
@@ -72,4 +94,15 @@ tbody tr:hover {
 
 #publications h3 {
   margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-photo {
+    text-align: center;
+  }
 }
