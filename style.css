@@ -42,7 +42,7 @@ nav a {
 }
 
 .about-photo img {
-  max-width: 220px;
+  max-width: 360px;
   width: 100%;
   border-radius: 8px;        /* subtle rounding */
   object-fit: cover;
