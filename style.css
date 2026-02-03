@@ -119,7 +119,6 @@ section {
   margin: auto;
 
   min-height: auto;        /* remove forced tall sections */
-  scroll-margin-top: 90px; /* keep this for fixed nav */
 }
 
 section:last-of-type {
