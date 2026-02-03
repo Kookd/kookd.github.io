@@ -117,8 +117,10 @@ section {
   padding: 100px 8%;
   max-width: 1000px;
   margin: auto;
-}
 
+  min-height: 80vh;        /* ensures sections are tall enough */
+  scroll-margin-top: 90px; /* offset for fixed nav */
+}
 /* Tables */
 table {
   width: 100%;
