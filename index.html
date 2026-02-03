@@ -144,7 +144,7 @@
 
   function setActiveByScroll() {
     const navHeight = nav ? nav.offsetHeight : 0;
-    const y = window.scrollY + navHeight + 10; // buffer under fixed nav
+    const y = window.scrollY + navHeight + 5; // buffer under fixed nav
 
     // Pick the last section whose top is above the "active line"
     let current = sections[0]?.id;
