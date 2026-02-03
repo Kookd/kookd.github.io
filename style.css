@@ -163,6 +163,10 @@ tbody tr:hover {
   margin-top: 1.5rem;
 }
 
+#projects {
+  padding-bottom: 30vh;
+}
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column-reverse;
